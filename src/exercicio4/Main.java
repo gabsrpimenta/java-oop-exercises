@@ -1,3 +1,5 @@
+package exercicio4;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -11,7 +13,7 @@ public class Main {
         curso2.duracaoEmHoras = 150;
         curso2.concluido = false;
 
-        System.out.println("Curso 1: " + curso.nome + " - Concluído: " + curso.concluido);
-        System.out.println("Curso 2: " + curso2.nome + " - Concluído: " + curso2.concluido);
+        System.out.println("exercicio4.Curso 1: " + curso.nome + " - Concluído: " + curso.concluido);
+        System.out.println("exercicio4.Curso 2: " + curso2.nome + " - Concluído: " + curso2.concluido);
     }
 }
