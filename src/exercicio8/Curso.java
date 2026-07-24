@@ -1,33 +1,33 @@
-package exercicio5;
+package exercicio8;
 
-public class Curso {
+public abstract class Curso {
 
     private String nome;
     private int duracaoEmHoras;
     private boolean concluido;
 
-    //Getters servem para ler(obter/recuperar) o valor sem alterações, e Setters servem para gravar e mudar o valor, mas apenas se o valor for aceite pelas regras.
     public String getNome() {
         return nome;
     }
-    //Ele não precisa responder, a tarefa dele acaba assim que guarda o valor. Como ele não devolve nenhuma resposta, ele é void.
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     public int getDuracaoEmHoras() {
         return duracaoEmHoras;
     }
-    //Dentro do () vai ser o argumento que vai ser determinado.
     public void setDuracaoEmHoras(int duracaoEmHoras) {
         if (duracaoEmHoras > 0) {
             this.duracaoEmHoras = duracaoEmHoras;
         }
     }
+
     public boolean isConcluido() {
         return concluido;
     }
     public void setConcluido(boolean concluido) {
         this.concluido = concluido;
     }
-}
 
+    public abstract String exibirResumo();
+}

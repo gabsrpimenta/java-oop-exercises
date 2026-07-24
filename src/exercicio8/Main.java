@@ -1,15 +1,7 @@
-package exercicio7;
+package exercicio8;
 
 public class Main {
     public static void main(String[] args) {
-
-        Curso curso1 = new Curso();
-        curso1.setNome("IEFP");
-        curso1.setDuracaoEmHoras(300);
-
-        Curso curso2 = new Curso();
-        curso2.setNome("ISLA");
-        curso2.setDuracaoEmHoras(300);
 
         CursoOnline c1 = new CursoOnline();
         c1.setNome("IEFP Online");
@@ -21,11 +13,14 @@ public class Main {
         c2.setDuracaoEmHoras(250);
         c2.setLinkAcesso("https://www.isla.pt");
 
-        System.out.println(curso1.exibirResumo());
-        System.out.println(curso2.exibirResumo());
+        CursoPresencial cursoPresencial = new CursoPresencial();
+        cursoPresencial.setNome("Inglês Avançado");
+        cursoPresencial.setDuracaoEmHoras(120);
+        cursoPresencial.setConcluido(false);
+        cursoPresencial.setEndereco("Rua das Flores, 123 - Porto");
 
         System.out.println(c1.exibirResumo());
         System.out.println(c2.exibirResumo());
-
+        System.out.println(cursoPresencial.exibirResumo());
     }
 }

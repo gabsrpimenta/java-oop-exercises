@@ -1,6 +1,5 @@
-package exercicio6;
+package exercicio8;
 
-//O CursoOnline vai herdar tudo que a classe Curso tem
 public class CursoOnline extends Curso {
 
     private String linkAcesso;
@@ -10,5 +9,10 @@ public class CursoOnline extends Curso {
     }
     public void setLinkAcesso(String linkAcesso) {
         this.linkAcesso = linkAcesso;
+    }
+
+    @Override
+    public String exibirResumo() {
+        return "Curso: " + getNome() + " (" + getDuracaoEmHoras() + "h) - Acesse em: " + linkAcesso;
     }
 }
