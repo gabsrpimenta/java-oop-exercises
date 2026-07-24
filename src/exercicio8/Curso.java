@@ -1,5 +1,11 @@
 package exercicio8;
 
+/*
+ * EXEMPLO DE CLASSE ABSTRATA (que serve como um molde)
+ * A classe Curso não pode ser criada diretamente (new Curso() se não dá erro).
+ * Ela serve apenas como base para as classes filhas.
+ */
+
 public abstract class Curso {
 
     private String nome;
@@ -29,5 +35,6 @@ public abstract class Curso {
         this.concluido = concluido;
     }
 
+    // Método abstrato: Toda classe filha é OBRIGADA a criar sua própria versão deste método
     public abstract String exibirResumo();
 }

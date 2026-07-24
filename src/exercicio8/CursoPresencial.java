@@ -1,5 +1,10 @@
 package exercicio8;
 
+/*
+ * CLASSE FILHA 2: Curso Presencial (Usa o mesmo molde)
+ * Também herda o nome, mas inicia a aula de um jeito totalmente diferente.
+ */
+
 public class CursoPresencial extends Curso {
 
     private String endereco;

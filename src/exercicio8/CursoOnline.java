@@ -1,5 +1,10 @@
 package exercicio8;
 
+/*
+ * CLASSE FILHA 1: Curso Online (Usa o molde)
+ * Herda o nome do Curso, mas personaliza a forma de iniciar a aula.
+ */
+
 public class CursoOnline extends Curso {
 
     private String linkAcesso;
